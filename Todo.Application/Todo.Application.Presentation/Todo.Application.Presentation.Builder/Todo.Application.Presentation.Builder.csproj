@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Builders\" />
+    <Folder Include="Factories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Todo.Toolkit\Todo.Toolkit.DomainModel\Todo.Toolkit.DomainModel.csproj" />
+    <ProjectReference Include="..\..\..\Todo.Toolkit\Todo.Toolkit.SharedDataModel\Todo.Toolkit.SharedDataModel.csproj" />
+    <ProjectReference Include="..\..\Todo.Application.Core\Todo.Application.Core.DomainService\Todo.Application.Core.DomainService.csproj" />
+    <ProjectReference Include="..\..\Todo.Application.Core\Todo.Application.Core.UseCase\Todo.Application.Core.UseCase.csproj" />
+    <ProjectReference Include="..\..\Todo.Application.Infrastructure\Todo.Application.Infrastructure.EFPostgreSQL\Todo.Application.Infrastructure.EFPostgreSQL.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="QueryServiceInterfaces\" />
+    <Folder Include="UseCases\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Todo.Toolkit\Todo.Toolkit.DomainModel\Todo.Toolkit.DomainModel.csproj" />
+    <ProjectReference Include="..\..\..\Todo.Toolkit\Todo.Toolkit.SharedDataModel\Todo.Toolkit.SharedDataModel.csproj" />
+    <ProjectReference Include="..\Todo.Application.Core.DomainService\Todo.Application.Core.DomainService.csproj" />
+  </ItemGroup>
+
+</Project>
